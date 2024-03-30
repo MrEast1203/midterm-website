@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "installCommand": "yarn install:all",
+  "builds": [{ "src": "./backend/src/*.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "/" }]
+}
