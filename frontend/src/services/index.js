@@ -1,10 +1,14 @@
 import { user } from "./user";
 import { auth } from "./auth";
+import { card } from "./card";
+import { chatgpt } from "./chatgpt";
 import api from "./axiosClient";
 
 const services = {
   auth,
   user,
+  card,
+  chatgpt,
 };
 
 api.interceptors.request.use(

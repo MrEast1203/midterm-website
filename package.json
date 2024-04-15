@@ -9,6 +9,8 @@
     "build": "cd frontend && yarn build",
     "install:all": "cd frontend && yarn install --production=false && cd ../backend && yarn",
     "install:prod": "cd frontend && yarn install --freeze-lockfile && cd ../backend && yarn install --freeze-lockfile",
-    "deploy": "cd backend && yarn deploy"
-  }
+    "deploy": "cd backend && yarn deploy",
+    "dev": "cd backend && yarn dev"
+  },
+  "dependencies": {}
 }

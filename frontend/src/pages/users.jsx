@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
-import service from "./../services";
+import services from "./../services";
 
 function UserPage() {
   const [users, setUsers] = useState([]);
   useEffect(() => {
-    service.user.getAll().then((allUsers) => {
+    // service.user.getAll().then((allUsers) => {
+    //   setUsers(allUsers);
+    // });
+    services.card.getAll().then((allUsers) => {
       setUsers(allUsers);
     });
   }, []);
